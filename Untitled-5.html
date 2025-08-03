@@ -1,0 +1,89 @@
+<!-- Ini adalah website Bali Barbershop di Jambi dengan animasi sederhana. -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Definisi keyframes untuk animasi "fade in up" */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Kelas untuk menerapkan animasi */
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-in-out forwards;
+            opacity: 0; /* Pastikan elemen tersembunyi sebelum animasi dimulai */
+        }
+    </style>
+
+    <title>Bali Barbershop - Jambi</title>
+</head>
+<body class="bg-gray-100 p-4">
+
+    <!-- Header dengan nama barbershop. -->
+    <header class="bg-white p-8 rounded-lg shadow-lg text-center mb-6 animate-fade-in-up" style="animation-delay: 0.2s;">
+        <h1 class="text-4xl font-bold text-gray-900 mb-2">Bali Barbershop</h1>
+        <p class="text-xl text-gray-600">Jambi, Indonesia</p>
+    </header>
+
+    <!-- Bagian tentang kami. -->
+    <div class="bg-white p-8 rounded-lg shadow-lg mb-6 animate-fade-in-up" style="animation-delay: 0.4s;">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
+        <p class="text-gray-700 mb-4">
+             datang di Bali Barbershop, destinasi utama untuk perawatan rambut pria di Jambi. Berlokasi strategis di pusat kota, kami hadir untuk menawarkan lebih dari sekadar potongan rambut, melainkan sebuah pengalaman yang memadukan keahlian tradisional dengan sentuhan modern. Sejak didirikan, komitmen kami adalah untuk menciptakan gaya yang mencerminkan kepribadian unik setiap pelanggan, dengan hasil yang rapi, stylish, dan tahan lama.
+
+Tim barber profesional kami terdiri dari para ahli yang berpengalaman, selalu mengikuti tren terbaru, dan menggunakan teknik pangkas rambut terbaik. Kami memahami bahwa setiap rambut memiliki karakteristiknya sendiri, oleh karena itu kami memberikan konsultasi personal untuk memastikan Anda mendapatkan potongan yang paling cocok dengan bentuk wajah dan gaya hidup Anda.
+
+Di Bali Barbershop, kebersihan dan kenyamanan adalah prioritas utama. Kami menggunakan peralatan yang disterilkan secara higienis dan produk-produk perawatan rambut premium yang aman untuk kulit kepala Anda. Suasana barbershop kami yang nyaman dan santai akan membuat Anda merasa betah, seolah-olah sedang berlibur sejenak dari rutinitas harian.
+
+Kunjungi kami dan biarkan tim kami memberikan penampilan terbaik untuk Anda. Rasakan perbedaannya, di mana setiap detail diperhatikan dengan seksama. Bali Barbershop, tempat di mana gaya Anda menjadi seni.
+        </p>
+        <!-- Tambahkan fc:\Users\balih\OneDrive\Gambar\andre-benz-qJfznuTMAYA-unsplash.jpgoto di sini. Ganti URL ini dengan URL foto barbershop Anda. -->
+        <img src="C:\Users\balih\OneDrive\Gambar\foto barbershop.jpg" alt="Foto Bali Barbershop" class="rounded-lg w-full mt-4">
+    </div>
+
+    <!-- Bagian Layanan. -->
+    <div class="bg-white p-8 rounded-lg shadow-lg mb-6 animate-fade-in-up" style="animation-delay: 0.6s;">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Layanan</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Pangkas Rambut</li>
+            <li>Cukur Jenggot</li>
+            <li>Perawatan Rambut</li>
+            <li>Gaya Rambut Pria</li>
+            
+
+        </ul>
+    </div>
+
+    <!-- Bagian Lokasi. -->
+    <div class="bg-white p-8 rounded-lg shadow-lg mb-6 animate-fade-in-up" style="animation-delay: 0.2s;">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Lokasi Kami</h2>
+    <p class="text-gray-700 mb-4">
+        Anda dapat menemukan kami di Jambi. Silakan kunjungi tempat kami untuk mendapatkan layanan terbaik.
+    </p>
+    <a href="https://maps.google.com/?cid=8399890882764537280&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+        Lihat di Google Maps
+    </a>
+</div>
+
+</body>
+</html>
